@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+body{
+    margin: 0px;
+    padding: 0px;
+}
+*{
+    box-sizing: border-box;
+}
+#root{
+    width: 100vw;
+    height: 100vh;
+    border: 2px solid black;
+    /* display: flex;
+    flex-direction: column; */
+}
+.add-task{
+    display: flex;
+    height: 10Vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+
+}
+.add-task form input{
+   border-radius: 5px;
+   height: 3.5vh;
+   margin: 0px 5px;
+   font-size: 18px;
+}
+.add-task form input[type=button]{
+    cursor: pointer;
+    background-color: black;
+    color: rgb(204, 199, 199);
+}
+.add-task form input[type=button]:hover{
+    transform: scale(1.05);
+    border: 2px solid white;
+    color: yellow;
+}
+.task-lists{
+    height: 90vh;
+    width: 100vw;
+    display: flex;
+    border: 2px solid rgb(9, 107, 47);
+
+}
+.task-lists .Todo{
+    width: 50%;
+    height: 100%;
+    border-left: 2px solid brown;
+}
+.task-lists .Finished{
+    width: 50%;
+    height: 100%;
+    border-left: 2px solid brown;
+}
+.task-lists .list-container{
+    height: 70%;
+    width: 50%;
+
+    background-color: rgb(176, 228, 211);
+    margin: 50px auto;
+    border-radius: 5px;
+}
+.task-lists .list-container .title{
+    height: 10%;
+    width: 100%;
+    background-color: teal;
+
+    text-align: center;
+    padding-top: 5px;
+
+    color: white;
+    font-size: 30px;
+    border-radius: 8px;
+}
+.task-lists .list-container .content{
+height: 90%;
+width: 100%;
+/* background-color: beige; */
+/* padding: 5px 10px; */
+font-size: 20px;
+
+}
+.task-lists .list-container .content div{
+     height: 50px;
+    padding: 10px 10px;
+ 
+    border-bottom: 2px solid teal;
+}
+.task-lists .list-container .content div span{
+    margin: 0px 20px;
+
+}
+.material-icons{
+    cursor: pointer;  
+}
+.task-lists .list-container .content div span.material-icons:hover{
+    color: white;
+}
